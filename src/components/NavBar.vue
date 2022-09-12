@@ -5,7 +5,7 @@
         <v-list-item>
         
           <v-list-item-avatar>
-              <v-img src="http://localhost:5173/src/assets/wenllie.jpg" class="rounded-circle"></v-img>
+              <v-img src="../src/assets/wenllie.jpg" class="rounded-circle"></v-img>
             </v-list-item-avatar>
 
         </v-list-item>
