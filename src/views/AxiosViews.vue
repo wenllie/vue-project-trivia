@@ -9,7 +9,7 @@
       >
           <v-card-title
             >
-              <h1>Quiz | Science: Mathematics</h1>
+              <h1>Quiz | Science Mathematics</h1>
           </v-card-title>
 
           <v-card-text

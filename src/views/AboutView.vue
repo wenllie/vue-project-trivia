@@ -1,7 +1,6 @@
 <template>
-    <center>
     <v-card
-      max-width="400"
+      max-width="800"
       class="ma-10"
     >
   
@@ -34,7 +33,7 @@
               :color="item.color"
               dark
             >
-              <div class="d-flex flex-no-wrap justify-space-between">
+              <div class="d-flex flex-no-wrap">
                 <div>
                   <v-card-title style="color: white;"
                     class="text-h5"
@@ -80,7 +79,6 @@
         </v-row>
       </v-container>
     </v-card>
-</center>
   </template>
   <script>
     export default {

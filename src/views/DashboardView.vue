@@ -200,7 +200,7 @@
               style="margin: 20px; "
             >
               <v-img fill-height
-              src="https://i.pinimg.com/564x/5a/23/42/5a23426ac48ae4f65e81cc1f60f418b2.jpg"
+              src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
               height="200">
 
               </v-img>
