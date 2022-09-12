@@ -20,7 +20,6 @@
               </v-img>
 
               <v-card-title><strong>Basic Information</strong></v-card-title>
-              <v-card-subtitle>...</v-card-subtitle>
 
               <v-card-actions>
                 <v-spacer></v-spacer>
@@ -67,7 +66,6 @@
               </v-img>
 
               <v-card-title><strong>Hobbies</strong></v-card-title>
-              <v-card-subtitle>...</v-card-subtitle>
 
               <v-card-actions>
                 <v-spacer></v-spacer>
@@ -114,7 +112,6 @@
               </v-img>
 
               <v-card-title><strong>Skills</strong></v-card-title>
-              <v-card-subtitle>...</v-card-subtitle>
 
               <v-card-actions>
                 <v-spacer></v-spacer>
@@ -209,7 +206,6 @@
               </v-img>
 
               <v-card-title><strong>About Vuetify</strong></v-card-title>
-              <v-card-subtitle>...</v-card-subtitle>
 
               <v-card-actions>
                 <v-spacer></v-spacer>
