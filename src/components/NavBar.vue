@@ -1,24 +1,5 @@
 <template>
   <nav>
-    <v-toolbar app>
-      <v-toolbar-title></v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-menu open-on-hover>
-
-        <template v-slot:activator="{ props }">
-          <v-btn icon v-bind="props">
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item v-for="(item, index) in items" :key="index" router :to="item.path" :prepend-icon="item.icon">
-            <v-list-item-title>{{  item.title  }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-    </v-toolbar>
-
     <v-navigation-drawer expand-on-hover rail>
       <v-list>
         <v-list-item>
@@ -58,10 +39,11 @@ import { ref } from 'vue'
 const drawer = ref(false)
 
 const items = ref([
-  { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/', color: "primary" },
-  { title: 'Calculator', icon: 'mdi-calculator-variant', path: '/calculator', color: "warning" },
-  { title: 'String Manipulator', icon: 'mdi-alphabetical', path: '/string-manipulator', color: "secondary" },
-  { title: 'Axios', icon: 'mdi-hexagon-multiple-outline', path: '/axios', color: "light" },
+  { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/', color: "#065535" },
+  { title: 'Calculator', icon: 'mdi-calculator-variant', path: '/calculator', color: "#800080" },
+  { title: 'String Manipulator', icon: 'mdi-alphabetical', path: '/string-manipulator', color: "#003366" },
+  { title: 'Quiz', icon: 'mdi-dots-hexagon', path: '/axios', color: "#800000" },
+  { title: 'About', icon: 'mdi-information', path: '/about', color: "#dc6900" },
 ])
 
 </script>
