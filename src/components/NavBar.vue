@@ -1,49 +1,93 @@
 <template>
   <nav>
-    <v-navigation-drawer expand-on-hover rail>
-      <v-list>
-        <v-list-item>
-        
-          <v-list-item-avatar>
-              <v-img src="../src/assets/wenllie.jpg" class="rounded-circle"></v-img>
-            </v-list-item-avatar>
+    <div v-if="user.loggedIn">
+      <v-navigation-drawer expand-on-hover rail>
 
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title class="text-h6">
+              {{user.data.displayName}}
+            </v-list-item-title>
+            <v-list-item-subtitle>...</v-list-item-subtitle>
+          </v-list-item-content>
         </v-list-item>
-      </v-list>
-
-      <v-list-item link>
-        <v-list-item-content>
-          <v-list-item-title class="text-h6">
-            Wenllie Joyce Suyat
-          </v-list-item-title>
-          <v-list-item-subtitle>...</v-list-item-subtitle>
-        </v-list-item-content>
-      </v-list-item>
 
         <v-divider></v-divider>
 
-      <v-list density="compact" app>
-        <v-list-item v-for="item in items" :key="item.title" router :to="item.path" :prepend-icon="item.icon"
-          :color="item.color">
-          <v-list-item-title :color="item.color">{{  item.title  }}</v-list-item-title>
+        <v-list density="compact" app>
+          <v-list-item v-for="item in items" :key="item.title" router :to="item.path" :prepend-icon="item.icon"
+            :color="item.color">
+            <v-list-item-title :color="item.color">{{ item.title }}</v-list-item-title>
 
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+          </v-list-item>
+        </v-list>
+
+        <template v-slot:append>
+          <div class="pa-2">
+            <v-list density="compact" app>
+              <v-list-item color="#a9252e" @click.prevent="signOut" prepend-icon="mdi-logout">Logout
+              
+            </v-list-item>
+            </v-list>
+          </div>
+        </template>
+
+      </v-navigation-drawer>
+    </div>
+    <div v-else>
+      <v-toolbar
+      dark
+      prominent
+      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+    >
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+      <v-toolbar-title></v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+    </v-toolbar>
+  </div>
   </nav>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+<script>
+import { useStore } from "vuex";
+import { useRouter } from "vue-router";
+import { computed } from "vue";
+import { auth } from '../firebaseConfig'
+export default {
+  name: "DashboardComponent",
+  data() {
+    return {
+      items: [
+        { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/', color: "#065535" },
+        { title: 'Calculator', icon: 'mdi-calculator-variant', path: '/calculator', color: "#800080" },
+        { title: 'String Manipulator', icon: 'mdi-alphabetical', path: '/string-manipulator', color: "#003366" },
+        { title: 'Quiz', icon: 'mdi-dots-hexagon', path: '/axios', color: "#800000" },
+        { title: 'Scores', icon: 'mdi-star', path: '/scores', color: "#cfc43c" },
+        { title: 'About', icon: 'mdi-information', path: '/about', color: "#dc6900" },
+      ],
+      drawer: false
+    }
+  },
+  setup() {
 
-const drawer = ref(false)
+    const store = useStore()
+    const router = useRouter()
+    auth.onAuthStateChanged(user => {
+      store.dispatch("fetchUser", user);
+    });
+    const user = computed(() => {
+      return store.getters.user;
+    });
+    const signOut = async () => {
+      await store.dispatch('logOut')
+      router.push('/login')
+    }
+    return { user, signOut }
+  }
 
-const items = ref([
-  { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/', color: "#065535" },
-  { title: 'Calculator', icon: 'mdi-calculator-variant', path: '/calculator', color: "#800080" },
-  { title: 'String Manipulator', icon: 'mdi-alphabetical', path: '/string-manipulator', color: "#003366" },
-  { title: 'Quiz', icon: 'mdi-dots-hexagon', path: '/axios', color: "#800000" },
-  { title: 'About', icon: 'mdi-information', path: '/about', color: "#dc6900" },
-])
 
+};
 </script>

@@ -54,6 +54,7 @@
        <v-card-actions>
         <v-btn
           style="background-color: #003366; color: white; font-weight:bold; font-size: large;"
+          height="50"
           class="font-weight-bold"
           elevation="3"
           block

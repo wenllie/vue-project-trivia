@@ -1,12 +1,12 @@
 <template>
    <v-app>
     <v-main>
-       <Navbar/>
+       <NavBar/>
        <router-view></router-view>
     </v-main>
    </v-app>
 </template>
 
 <script setup>
-  import Navbar from '@/components/NavBar.vue';
-</script>
+   import NavBar from '@/components/NavBar.vue'
+ </script>

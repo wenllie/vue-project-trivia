@@ -1,40 +1,27 @@
 <template>
   <div id="app">
-      <center>
-      <v-card
-          class="ma-10 pa-5"
-          width="1000"
-          elevation="10"
-          color="white"
-      >
-          <v-card-title
-            >
-              <h1>Quiz | Science Mathematics</h1>
-          </v-card-title>
+    <center>
+      <v-card class="ma-10 pa-5" width="1000" elevation="10" color="white">
+        <v-card-title>
+          <h1><strong>Quiz | Science Mathematics</strong></h1>
+        </v-card-title>
 
-          <v-card-text
-              class="ma-4">
-              <quiz @quiz-completed="handleQuizCompleted" :key="quizKey" />
-                  <quiz-modal
-                      v-show="showModal"
-                      header="Congratulations!"
-                      subheader="You've completed the Quiz!"
-                      :score="score"
-                      @reload="updateQuiz"
-                      @close="showModal = false"
-                  />
-          </v-card-text>
+        <v-card-text class="ma-4">
+          <quiz @quiz-completed="handleQuizCompleted" :key="quizKey" />
+          <quiz-modal v-show="showModal" header="Congratulations!" subheader="You've completed the Quiz!" :score="score"
+            @reload="updateQuiz" @close="showModal = false" />
+        </v-card-text>
 
       </v-card>
 
-  </center>
-</div>
+    </center>
+  </div>
 </template>
 
 <script>
 import QuizModal from "../components/QuizModal.vue";
 import Quiz from "../components/Quiz.vue";
-  
+
 export default {
   components: { Quiz, QuizModal },
   name: "App",
