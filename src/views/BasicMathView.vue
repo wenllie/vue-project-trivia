@@ -2,7 +2,7 @@
 
   <v-card
        :loading="loading"
-       class="mx-auto my-12 pa-3"
+       class="mx-auto my-12"
        max-width="800"
        elevation="12"
        color="white"
@@ -10,8 +10,7 @@
     >
 
       <v-img fill-height
-        src="https://t4.ftcdn.net/jpg/02/38/56/47/360_F_238564757_L7gsykjvZe2Sdtnyfa0mHd0fObHU4f5G.jpg"
-        height="200"
+        src="https://t4.ftcdn.net/jpg/02/38/56/47/360_F_238564757_L7gsykjvZe2Sdtnyfa0mHd0fObHU4f5G.jpg" 
         class="mb-5">
 
       </v-img>
@@ -25,7 +24,8 @@
         </h1>
       </v-card-title>
 
-      <v-row style="margin: 5px;">
+      <div style="padding: 10px;">
+        <v-row style="margin: 5px;">
         <v-col
           cols="12"
           sm="6">
@@ -63,13 +63,11 @@
           Compute
         </v-btn>
       </v-card-actions>
-       
-      <div style="margin-top: 40px;">
-        <hr class="solid">
-      </div>
       
-      <v-card-title><h1 style="margin-top: 5px;" align="center"><strong>Result</strong></h1></v-card-title>
-      
+      <v-card-title><h1 style="margin-top: 10px;" align="center"><strong>Result</strong></h1></v-card-title>
+
+      <v-divider class="mb-5"></v-divider>
+
       <v-row class="mt-5">
         <v-col
           cols="12"
@@ -126,6 +124,7 @@
           </v-card>
         </v-col>
       </v-row>
+      </div>
       
     </v-card>
   

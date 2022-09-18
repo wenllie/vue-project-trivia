@@ -14,8 +14,7 @@
               style="margin: 20px; "
             >
               <v-img fill-height
-              src="https://t4.ftcdn.net/jpg/04/95/49/53/360_F_495495397_7WK5yvKZdZZtpyVNPACIJwuJAPaLiYJP.jpg"
-              height="200">
+              src="https://t4.ftcdn.net/jpg/04/95/49/53/360_F_495495397_7WK5yvKZdZZtpyVNPACIJwuJAPaLiYJP.jpg">
 
               </v-img>
 
@@ -60,8 +59,7 @@
               style="margin: 20px; "
             >
               <v-img fill-height
-              src="https://thumbs.dreamstime.com/b/learning-hobby-art-banner-background-empty-sketchbook-art-supplies-around-mockup-top-view-learning-hobby-art-banner-198153423.jpg"
-              height="200">
+              src="https://thumbs.dreamstime.com/b/learning-hobby-art-banner-background-empty-sketchbook-art-supplies-around-mockup-top-view-learning-hobby-art-banner-198153423.jpg">
 
               </v-img>
 
@@ -106,8 +104,7 @@
               style="margin: 20px; "
             >
               <v-img fill-height
-              src="https://i.pinimg.com/originals/8e/ff/84/8eff846f4e72122d1d39c4a55ef35b38.jpg"
-              height="200">
+              src="https://i.pinimg.com/originals/8e/ff/84/8eff846f4e72122d1d39c4a55ef35b38.jpg" >
 
               </v-img>
 
@@ -200,8 +197,7 @@
               style="margin: 20px; "
             >
               <v-img fill-height
-              src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-              height="200">
+              src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg" >
 
               </v-img>
 

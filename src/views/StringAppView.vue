@@ -2,7 +2,7 @@
      <div id="app">
           <v-card
                :loading="loading"
-               class="mx-auto my-12 pa-3"
+               class="mx-auto my-12"
                max-width="800"
                elevation="12"
                color="white"
@@ -10,8 +10,7 @@
           >
 
                <v-img fill-height
-               src="https://previews.123rf.com/images/maudis60/maudis601712/maudis60171200026/91518817-banner-abstract-confuse-colorful-alphabet-vector-background.jpg"
-               height="200"
+               src="https://previews.123rf.com/images/maudis60/maudis601712/maudis60171200026/91518817-banner-abstract-confuse-colorful-alphabet-vector-background.jpg" 
                class="mb-5">
 
                </v-img>
@@ -26,6 +25,7 @@
                </v-card-title>
 
                <v-text-field
+                    class="ma-5"
                     type="text"
                     label="Enter a string"
                     hint="For example: one, tree, hehe"
@@ -37,8 +37,9 @@
 
                <v-card-title><h1 style="margin-top: 5px;" align="center"><strong>Result</strong></h1></v-card-title>
 
-               <v-col class="shrink">
+               <v-divider class="mb-3"></v-divider>
 
+               <v-col>
                     <v-expand-transition>
                          <v-card v-show="expand" class="d-flex justify-space-between mb-6"
                               :color="$vuetify.theme.dark ? 'light-blue lighten-4' : 'white'" flat tile>
