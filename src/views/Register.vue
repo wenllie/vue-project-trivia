@@ -18,7 +18,7 @@
         <v-btn id="registerBtn" elevation="5" height="60" block type="submit">
           <strong>Register</strong>
         </v-btn>
-        <h3><strong>Already have an account?</strong><router-link to="/login" id="link-signin"><strong> Sign in</strong></router-link>
+        <h3><strong>Already have an account?</strong><router-link to="/" id="link-signin"><strong> Sign in</strong></router-link>
         </h3>
 
       </form>
