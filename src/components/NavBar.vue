@@ -83,7 +83,7 @@ export default {
     });
     const signOut = async () => {
       await store.dispatch('logOut')
-      router.push('/login')
+      router.push('/')
     }
     return { user, signOut }
   }
