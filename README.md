@@ -50,11 +50,5 @@ npm run build
 ```
 
 
-#� �v�u�e�-�p�r�o�j�e�c�t�-�t�r�i�v�i�a�
-�
-�
-#� �Q�u�i�z�-�A�p�p�
-�
-�#� �Q�u�i�z�-�A�p�p�
-�
-�
+## AZURE WEBSITE
+(https://brave-smoke-0d08d8910.1.azurestaticapps.net)
