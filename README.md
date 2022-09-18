@@ -51,4 +51,4 @@ npm run build
 
 
 ## AZURE WEBSITE
-(https://brave-smoke-0d08d8910.1.azurestaticapps.net)
+https://brave-smoke-0d08d8910.1.azurestaticapps.net
