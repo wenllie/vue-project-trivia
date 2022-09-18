@@ -10,7 +10,7 @@ import Scores from '../views/Scores.vue';
 
 const routes = [
         {
-        path: '/login',
+        path: '/',
         name: 'login',
         component: Login
     },
@@ -20,7 +20,7 @@ const routes = [
         component: Register
     },
     {
-        path: '/',
+        path: '/dashboard',
         name: 'Dashboard',
         component: Dashboard
     },

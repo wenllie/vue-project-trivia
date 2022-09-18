@@ -61,7 +61,7 @@ export default {
   data() {
     return {
       items: [
-        { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/', color: "#065535" },
+        { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/dashboard', color: "#065535" },
         { title: 'Calculator', icon: 'mdi-calculator-variant', path: '/calculator', color: "#800080" },
         { title: 'String Manipulator', icon: 'mdi-alphabetical', path: '/string-manipulator', color: "#003366" },
         { title: 'Quiz', icon: 'mdi-dots-hexagon', path: '/axios', color: "#800000" },
