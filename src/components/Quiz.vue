@@ -1,11 +1,11 @@
 <template>
   <div v-show="!admin">
     <div class="container" style="line-height: 30px;">
-      <div class="correctAnswers" style="margin: 10px;">
+      <div class="correctAnswers" style="margin: 10px; font-weight: bold;">
         You have
         <strong>{{ correctAnswers }} correct {{ pluralizeAnswer }}!</strong>
       </div>
-      <div class="correctAnswers" style="margin: 10px;">
+      <div class="correctAnswers" style="margin: 10px; font-weight: bold;">
         Currently at question {{ index + 1 }} of {{ questions.length }}
       </div>
 

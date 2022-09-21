@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <center>
-      <v-card class="ma-10 pa-5" width="1000" elevation="10" color="white">
+      <v-card id="quizCard" class="ma-10 pa-5" width="1000" elevation="10" color="white">
         <v-card-title>
           <h1><strong>Quiz | Science Mathematics</strong></h1>
         </v-card-title>
@@ -48,3 +48,9 @@ export default {
   },
 };
 </script>
+<style>
+ #quizCard {
+  background-image: url("https://media.istockphoto.com/vectors/technology-and-science-innovation-background-vector-id948623186?k=20&m=948623186&s=612x612&w=0&h=UU5iJvbqkyqqDfeLTyeCGv-tHH4WOkUWhxLOEVeUGfk=");
+ }
+
+</style>
